@@ -1,0 +1,9 @@
+Você tem permissão para iniciar o teste quando quiser. O cronômetro iniciará somente quando você iniciar o teste. No entanto, lembre-se de que o administrador tem direitos totais para desativar o teste a qualquer momento. Portanto, é recomendável iniciar o teste no horário prescrito.
+Você pode ver o histórico do teste realizado e as pontuações na seção 'Histórico'.
+Para iniciar o teste, clique em 'Go'.
+Assim que o teste for iniciado, o cronômetro funcionará independentemente de você estar conectado ou registrado em nosso status. Portanto, é recomendável não fazer logout antes da conclusão do teste.
+Para marcar uma resposta, você precisa selecioná-la e pressionar o botão 'Bloquear'. Ao bloquear, a resposta selecionada será exibida e a pergunta será marcada como "verde"
+Para apagar uma resposta pressione <span style="color:darkred:font-size:12px" class="glyphicon glyphicon-remove"></span>.
+Use os botões de navegação para navegar pelas diferentes questões.
+As marcas para resposta correta e incorreta estão listadas acima na tabela. 0 pontos seriam atribuídos às questões que são "não marcadas" (com status "vermelho").
+Se você receber algum erro, pode nos contatar via <a href=feedback.php>E-mail: <b>report@jhonelima.com</b></a>
