@@ -1,0 +1,768 @@
+
+<!doctype html>
+<!--
+Website By Carlos Vieira.
+Se você está olhando isso é por que você tem curiosidade e isso é bom.
+Mas ainda precisa desenvolver seu mindset, não é todo site que te dá tudo assim tão fácil :)
+Me mande um e-mail e eu vou te mostrar algo legal: contato@carlosvieira.com.br.
+-->
+
+<html class="no-js" lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+  <!-- Page Title Here -->
+  <title>CrowSec - Pentest - Universo Paralelo</title>
+
+  <!-- Meta -->
+  <!-- Page Description Here -->
+  <meta name="title" content="CrowSec - Pentest - Universo Paralelo">
+  <meta name="description" content="Cursos, Treinamentos, Laboratórios de Pentest.">
+  <meta name="keywords" content="pentest, hacking, hacker, ethical hacking, Pentesting, Teste de invasão, Curso de pentest">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="Portuguese">
+  <meta name="revisit-after" content="1 day">
+  <meta name="author" content="Carlos Vieira">
+  <meta name="theme-color" content="#04080f">
+  <link rel="shortcut icon" type="image/x-icon" href="../../cs-icon.png" />
+
+
+  <!-- Disable screen scaling-->
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+
+  <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+  <!-- Web fonts and Web Icons -->
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="../bebas/stylesheet.css">
+  <link rel="stylesheet" href="../ionicons.min.css">
+  <link rel="stylesheet" href="../font-awesome.min.css">
+
+  <!-- Vendor CSS style -->
+  <link rel="stylesheet" href="../../css/pageloader.css">
+
+  <!-- Uncomment below to load individualy vendor CSS -->
+  <link rel="stylesheet" href="../../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../js/vendor/swiper.min.css">
+  <link rel="stylesheet" href="../../js/vendor/jquery.fullpage.min.css">
+  <link rel="stylesheet" href="../../js/vegas/vegas.min.css">
+
+  <!-- Main CSS files -->
+  <link rel="stylesheet" href="../../css/main.css">
+
+  <!-- add alt layout here -->
+  <link rel="stylesheet" href="../../css/style-default.css">
+
+  <script src="../../js/vendor/modernizr-2.7.1.min.js" type="af31a8272268a45855a7f9c2-text/javascript"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148143685-1" type="af31a8272268a45855a7f9c2-text/javascript"></script>
+  <script type="af31a8272268a45855a7f9c2-text/javascript">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-148143685-1');
+  </script>
+  <!-- Hotjar Tracking Code for crowsec.com.br -->
+  
+<script type="af31a8272268a45855a7f9c2-text/javascript">
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1489121,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<!-- Facebook Pixel Code -->
+<script type="af31a8272268a45855a7f9c2-text/javascript">
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window,document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+   fbq('init', '521546685085139'); 
+  fbq('track', 'PageView');
+  </script>
+  <noscript>
+   <img height="1" width="1" 
+  src="https://www.facebook.com/tr?id=521546685085139&ev=PageView
+  &noscript=1"/>
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+</head>
+
+<body id="menu" class="body-page">
+  <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+  <!-- Page Loader : just comment these lines to remove it -->
+  <div class="page-loader" id="page-loader">
+    <div>
+      <div class="icon ion-spin"></div>
+      <p>Hacking in progress</p>
+    </div>
+  </div>
+
+  <!-- BEGIN OF site header Menu -->
+  <header class="page-header navbar page-header-alpha scrolled-white menu-right topmenu-right">
+
+    <!-- Begin of menu icon toggler -->
+    <button class="navbar-toggler site-menu-icon" id="navMenuIcon">
+      <!-- Available class : menu-icon-dot / menu-icon-thick /menu-icon-random -->
+      <span class="menu-icon menu-icon-normal">
+        <span class="bars">
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+          <span class="bar3"></span>
+        </span>
+      </span>
+    </button>
+    <!-- End of menu icon toggler -->
+
+
+
+    <!-- begin of menu wrapper -->
+    <div class="all-menu-wrapper" id="navbarMenu">
+      <!-- Begin of top menu -->
+      <nav class="navbar-topmenu">
+ 
+      </nav>
+      <!-- End of top menu -->
+
+      <!-- Begin of hamburger mainmenu menu -->
+      <nav class="navbar-mainmenu">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="../../index.html#home">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="opensans-light-webfont.ttf.html#contact">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="opensans-light-webfont.ttf.html#projects-featured">Módulos</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- End of hamburger mainmenu menu -->
+
+    </div>
+    <!-- end of menu wrapper -->
+
+  </header>
+  <!-- END OF site header Menu-->
+
+  <!-- BEGIN OF page cover -->
+  <div class="page-cover" id="parallax-cover">
+    <!-- Cover Background -->
+    <div data-depth="0.2" class="cover-bg bg-img" data-image-src="/img/bg-default.png"></div>
+
+    <!-- Transluscent mask as filter -->
+    <div class="cover-bg-mask bg-color" data-bgcolor="rgba(2, 3, 10, 0.7)"></div>
+
+
+  </div>
+  <!--END OF page cover -->
+
+  <!-- BEGIN OF page main content -->
+  <main class="page-main page-fullpage main-anim" id="mainpage">
+
+    <!-- Begin of home section -->
+    <div class="section section-home fullscreen-md fp-auto-height-responsive main-home section-centered"
+    data-section="home">
+      <!-- Begin of section wrapper -->
+      <div class="section-wrapper fullwidth with-margin v-center">
+        <!-- content -->
+        <div class="section-content anim">
+          <div class="row">
+            <div class="col-12 col-lg-6 text-left">
+              <!-- title and description -->
+              <div class="title-desc">
+                <h1 class="display-4 display-title home-title decor anim-1">CrowSec<b class="animate-rec">.</b></h1>
+                <h4 class="anim-2">Hello Friend,</h4>
+                <p class="anim-2">Bem-vindo ao portal para o Universo Paralelo! Mas para entrar neste portal, você precisa mudar seu mindset. Não se preocupe... juntos vamos desenvolver isto!!</p>
+                <p class="anim-2">A arte de Hackear vai além de uma tela preta com letras verdes e eu vou te mostrar o caminho...</p>
+              </div>
+
+              <!-- Action button -->
+              <div class="btns-action anim-3">
+                <a class="btn btn-circicon btn-primary" href="opensans-light-webfont.ttf.html#about">
+                  <span class="icon">
+                    <i class="ion ion-chevron-down"></i>
+                  </span>
+                  <span class="text">Mudar Mindset</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="section-aside aside-bottom">
+          <div class="text-right">
+
+          </div>
+          <!-- Action button -->
+          <div class="btns-action anim-3 text-right">
+            <a class="btn btn-outline-white btn-round" href="opensans-light-webfont.ttf.html#contact">
+              Contato
+            </a>
+          </div>
+        </div>
+
+
+        <!-- Arrows scroll down/up -->
+        <footer class="section-footer scrolldown">
+          <a class="down">
+            <span class="icon"></span>
+            <span class="txt">Scroll Down</span>
+          </a>
+        </footer>
+      </div>
+      <!-- End of section wrapper -->
+    </div>
+    <!-- End of home section -->
+
+    <!-- Begin of description section -->
+    <div class="section section-description fp-auto-height-responsive " data-section="about">
+      <!-- Begin of section wrapper -->
+      <div class="section-wrapper fullwidth with-margin">
+
+        <!-- content -->
+        <div class="section-content anim">
+          <div class="row">
+            <div class="col-12 col-md-6 text-left">
+              <!-- title and description -->
+              <div class="title-desc">
+                <h1 class="display-4 display-title anim-1">Mindset
+                <span class="span-line"></span>
+                </h1>
+                <h4 class="anim-2">Não é sobre terminal com tela preta e sim sobre criatividade <span style="color: #ffff00">.</span></h4>
+                <p class="anim-2">Você sabia que em um dos primeiros ataques realizados na história, o hacker nem se quer tocou em um computador <span style="color: #ffff00">?</span>
+                </p>
+                <p class="anim-2">Na primeira foto, você pode ver quem é este hacker, ele hackeou as centrais de telefonia da época usando apenas um apito (apito do capitão crunch). Sim é isso mesmo<span style="color: #ffff00">!</span></p>
+                <p class="anim-2">Na segunda foto, temos o Hacker Kevin Mitnic que usou de engenharia social para roubar o código fonte do lançamento da Motorola na época o Microtac Ultra Lite <span style="color: #ffff00">.</span></p>
+              </div>
+
+              <!-- Action button -->
+              <div class="btns-action anim-3">
+                <a class="btn btn-circicon btn-primary" href="opensans-light-webfont.ttf.html#projects-featured">
+                  <span class="icon">
+                    <i class="ion ion-chevron-down"></i>
+                  </span>
+                  <span class="text">Acessar o portal <span style="color: #ffff00">.</span></span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- aside -->
+        <div class="section-aside aside-bottom  small-relative">
+          <div class="a-wrapper anim-4">
+            <!-- begin of slider carousel-swiper-alpha -->
+            <div class="slider-wrapper carousel-swiper-alpha carousel-swiper-alpha-demo">
+              <!-- slider -->
+              <div class="slider-container swiper-container">
+                <ul class="item-list swiper-wrapper">
+                  <!-- item -->
+                  <li class="slide-item swiper-slide">
+                    <div class="item-wrapper">
+                      <div class="illustr">
+                        <img src="../../img/items/img-people-john-2.jpg" alt="Image" class="img w-80">
+                      </div>
+                      <div class="legend">
+                        <h3 class="title">John Draper</h3>
+                        <h4>Ele criou o conceito de phreaker ao conseguir fazer ligações gratuitas, utilizando um apito de plástico que vinha de brinde em uma caixa de cereais. O apito reproduzia fielmente o tom de 2600 Hz, que era utilizado para acessar diretamente o sistema de telefonia na época<span style="color: #ffff00">.</span></h4>
+                       
+                      </div>
+                    </div>
+                  </li>
+                  <!-- item -->
+                  <li class="slide-item swiper-slide">
+                    <div class="item-wrapper">
+                      <div class="illustr">
+                        <img src="../../img/items/img-people-kevin.jpg" alt="Image" class="img w-80">
+                      </div>
+                      <div class="legend">
+                        <h3 class="title"> Kevin Mitnick</h3>
+                        <h4>Kevin Mitnick começou suas trapaças ao burlar o sistema de cartão de ônibus, conseguindo passagens gratuitamente. Utilizou de engenharia social com uma assistente e conseguiu o código fonte do Microtac da Motorola<span style="color: #ffff00">.</span></h4>
+                      
+                      </div>
+                    </div>
+                  </li>
+            
+                </ul>
+              </div>
+              <!-- pagination -->
+              <div class="items-pagination bar"></div>
+
+            </div>
+            <!-- end of slider carousel-swiper-alpha -->
+
+          </div>
+        </div>
+
+
+        <!-- Arrows scroll down/up -->
+        <footer class="section-footer scrolldown">
+          <a class="down">
+            <span class="icon"></span>
+            <span class="txt">Works</span>
+          </a>
+        </footer>
+      </div>
+      <!-- End of section wrapper -->
+    </div>
+    <!-- End of description section -->
+
+    <!-- Begin of slider section -->
+    <div class="section section-twoside project-slider fp-auto-height-responsive " data-section="projects-featured">
+      <div class="slide">
+        <div class="slide-wrapper">
+          <div class="item-wrapper">
+            <div class="illustr">
+              <img class="img img-block" src="../../img/items/img-sample1.jpg" alt="Image">
+            </div>
+            <div class="legend">
+              <a href="opensans-light-webfont.ttf.html#project_url">
+                <h3>Engenharia Social
+                <span class="span-line"></span>
+                </h3>
+                <h4>A arte de enganar <span style="color: #ffff00">.</span></h4>
+                <p>A engenharia social é arte de manipular pessoas para conseguir dados sigilosos, logins de sistemas e etc <span style="color: #ffff00">.</span></p>
+              </a>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide-wrapper">
+          <div class="item-wrapper">
+            <div class="illustr">
+              <img class="img img-block" src="../../img/items/img-sample12-square.jpg" alt="Image">
+            </div>
+            <div class="legend">
+              <a href="opensans-light-webfont.ttf.html#project_url">
+                <h3>Ética
+                <span class="span-line"></span>
+                </h3>
+                <h4>Não é porque eu posso que eu devo <span style="color: #ffff00">.</span></h4>
+                <p>Vou ajudar você a modelar a sua ética. Juntos vamos aprender que nem sempre devemos fazer algo, mesmo quando podemos <span style="color: #ffff00">.</span></p>
+              </a>
+             
+           
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide-wrapper">
+          <div class="item-wrapper">
+            <div class="illustr">
+              <img class="img img-block" src="../../img/items/img-sample2.jpg" alt="Image">
+            </div>
+            <div class="legend">
+              <a href="opensans-light-webfont.ttf.html#project_url">
+                <h3>Identificar & Explorar
+                <span class="span-line"></span>
+                </h3>
+                <h4>Recon / Exploitation <span style="color: #ffff00">.</span></h4>
+                <p>Neste módulo eu vou te ensinar como identificar e explorar brechas de segurança em uma rede, sistema ou serviço <span style="color: #ffff00">.</span></p>
+              </a>
+            
+           
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide-wrapper">
+          <div class="item-wrapper">
+            <div class="illustr">
+              <img class="img img-block" src="../../img/items/img-sample4.jpg" alt="Image">
+            </div>
+            <div class="legend">
+              <a href="opensans-light-webfont.ttf.html#project_url">
+                <h3>BackDoor & Data Leak  
+                <span class="span-line"></span>
+                </h3>
+                <h4>Data exiltering / Backdoor <span style="color: #ffff00">.</span></h4>
+                <p>Que tal aprender a ficar em modo stealth na rede ? <br>
+                  Vou te mostrar como limpar rastros e deixar uma porta dos fundos para um acesso futuro <span style="color: #ffff00">.</span></p>
+              </a>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide-wrapper">
+          <div class="item-wrapper">
+            <div class="illustr">
+              <img class="img img-block" src="../../img/items/img-sample11-square.jpg" alt="Image">
+            </div>
+            <div class="legend">
+              <a href="opensans-light-webfont.ttf.html#project_url">
+                <h3>Best Report!
+                <span class="span-line"></span>
+                </h3>
+                <h4>Relatório / Correções <span style="color: #ffff00">.</span></h4>
+                <p>Vamos juntos preparar seu primeiro relatório de uma forma totalmente simples e que seja totalmente assertivo para seu cliente. <span style="color: #ffff00">.</span></p>
+              </a>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Arrows scroll down/up -->
+      <footer class="section-footer scrolldown">
+        <a class="down">
+          <span class="icon"></span>
+          <span class="txt">All Works</span>
+        </a>
+      </footer>
+
+    </div>
+    <!-- End of slider section -->
+
+
+
+    <!-- Begin of list feature section -->
+    <div class="section section-list-feature fp-auto-height-responsive " data-section="services">
+      <!-- section cover -->
+      <div class="section-cover-full bg-img" data-image-src="/img/sections/services.png">
+      </div>
+
+      <!-- Begin of section wrapper -->
+      <div class="section-wrapper fullwidth with-margin">
+        <!-- content -->
+        <div class="section-content anim">
+          <div class="row">
+            <div class="col-12 col-lg-6 text-left">
+              <!-- title and description -->
+              <div class="title-desc">
+                <h2 class="display-4 display-title anim-1">Mentoria
+                <span class="span-line"></span>
+                </h2>
+                <p class="anim-2">Você quer fazer parte de um grupo de mentoria pré-selecionado <span style="color: #ffff00">?</span>
+                  <br> Eu vou te acompanhar de perto, tirando suas dúvidas e orientando seus passos <span style="color: #ffff00">.</span>
+                  <br> Além de ter acesso a um grupo privado, você vai ter acesso às seguintes plataformas<span style="color: #ffff00">:</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- service list -->
+          <div class="service-list grid-1 grid-md-2 grid-lg-4 anim-list decor">
+            <!-- an item -->
+           
+            <!-- an item -->
+            <div class="item media">
+              <div class="img">
+                <i class="icon  ion-ios-game-controller-a-outline" style="color: #ffff00"></i>
+              </div>
+              <div class="media-body">
+                <h4><b>Desafios <span style="color: #ffff00">.</span></b></h4>
+                <p>Você terá acesso a um ambiente com vários desafios no estilo de "Captura de bandeira - CTF", do fácil ao expert<span style="color: #ffff00"> .</span></p>
+              </div>
+            </div>
+         
+            <!-- an item -->
+            <div class="item media">
+              <div class="img">
+                <i class="icon ion-ios-grid-view-outline" style="color: #ffff00"></i>
+              </div>
+              <div class="media-body">
+                <h4><b>CS Club - Networking <span style="color: #ffff00">.</span></b></h4>
+                <p>Grupo exclusivo de alunos e ex-alunos onde você poderá interagir, compartilhar informações e tirar dúvidas<span style="color: #ffff00"> .</span></p>
+
+              </div>
+            </div>
+          
+           
+            <!-- an item -->
+            <div class="item media">
+              <div class="img">
+                <i class="icon ion-ios-cloud-outline"style="color: #ffff00"></i>
+              </div>
+              <div class="media-body">
+                <h4><b>Hack the planet <span style="color: #ffff00">.</span></b></h4>
+                <p>Você terá acesso a um ambiente com vários sistemas, aplicativos e servidores. Este vai ser o seu último passo na mentoria, e terá que comprometer tudo o que estiver na rede<span style="color: #ffff00"> .</span></p>
+              </div>
+            </div>
+            <!-- an item -->
+         
+          </div>
+
+        </div>
+
+
+
+
+        <!-- Arrows scroll down/up -->
+        <footer class="section-footer scrolldown">
+          <a class="down">
+            <span class="icon"></span>
+            <span class="txt">Projects</span>
+          </a>
+        </footer>
+      </div>
+      <!-- End of section wrapper -->
+    </div>
+    <!-- End of list feature section -->
+
+
+   
+
+
+
+    <!-- Begin of register/login/signin section -->
+    <div class="section section-register fp-auto-height-responsive " data-section="register">
+      <!-- section cover -->
+      <div class="section-cover-full bg-img" data-image-src="/img/sections/register.png">
+      </div>
+
+      <!-- Begin of section wrapper -->
+      <div class="section-wrapper fullwidth with-margin">
+
+        <!-- content -->
+        <div class="section-content anim">
+
+          <div class="row">
+
+            <div class="col-12 col-md-12 col-lg-5">
+              <!-- Registration form container-->
+              <form class="send_email_form form-container form-container-transparent form-container-white"
+              method="post" action="https://webhook.site/1a4561ab-56d9-4124-aa34-54b75a7ccada">
+                <div class="form-desc">
+                  <h2 class="display-4 display-title  anim-2">Já estão abertas as inscrições para a Formação CROWSEC PENTESTERS<span style="color: #ffff00">!</span>
+                  </h2>
+                  <p class="invite  anim-3">Clique aqui no botão abaixo para se inscrever <span style="color: #ffff00">!</span>
+</p>
+                </div>
+                <div class="form-input  anim-4">
+                 
+                  <div class="form-group mb-0">
+                  
+                    <div class="btns-action anim-3">
+                      <a href="https://li.crowsec.com.br/" class="btn btn-circicon btn-primary form-success-gone">
+                        <span class="icon">
+                          <i class="ion ion-checkmark"></i>
+                        </span>
+                        <span class="text">Quero ser um Pentester</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- end of content -->
+
+        <!-- aside footer -->
+        <div class="section-aside aside-bottom small-relative">
+          <div class="text-left text-md-right">
+            <p>Fique atualizado. Me siga nas redes sociais</p>
+          </div>
+          <div class="icons icons-margin">
+            <a class="icon-btn" href="https://www.instagram.com/carlos.crowsec/" target="_blank">
+              <i class="icon fa fa-instagram"></i>
+            </a>
+            <a class="icon-btn" href="https://www.youtube.com/carlosvieiracrowsec" target="_blank">
+              <i class="icon fa fa-youtube"></i>
+            </a>
+            <a class="icon-btn" href="https://www.facebook.com/carlos.crowsec" target="_blank">
+              <i class="icon fa fa-facebook"></i>
+            </a>
+           
+          </div>
+        </div>
+
+      </div>
+      <!-- End of section wrapper -->
+
+      <!-- Arrows scroll down/up -->
+      <footer class="section-footer scrolldown">
+        <a class="down">
+          <span class="icon"></span>
+          <span class="txt">Contact
+          </span>
+          
+        </a>
+      </footer>
+    </div>
+    <!-- End of register/login/signin section -->
+
+    <!-- Begin of contact section -->
+    <div class="section section-contact fp-auto-height-responsive no-slide-arrows " data-section="contact">
+      <!-- section cover -->
+      <div class="section-cover-full bg-img" data-image-src="/img/sections/contact.png">
+      </div>
+
+      <!-- Begin of slide section wrapper -->
+      <div class="section-wrapper fullwidth  with-margin">
+        <!-- main content -->
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-6">
+            <!-- content -->
+            <div class="section-content anim text-left">
+              <!-- title and description -->
+              <div class="title-desc">
+                <div class="anim-2">
+                  <h2 class="display-4 display-title">Contato
+                  <span class="span-line"></span>
+                  </h2>
+                  <p>Se você ficou com qualquer dúvida, você pode entrar em contato diretamente comigo :)</p>
+                </div>
+                <div class="address-container anim-3">
+
+                  <div class="row">
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <h4>E-mail</h4>
+                      <p>Email: <a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="64070b0a1005100b24070516080b17120d010d16054a070b094a0616">[email&#160;protected]</a></p>
+
+                      <div class="icons icons-margin">
+                        <a class="icon-btn" href="https://www.instagram.com/carlos.crowsec/" target="_blank">
+                          <i class="icon fa fa-instagram"></i>
+                        </a>
+                        <a class="icon-btn" href="https://www.facebook.com/carlos.crowsec" target="_blank">
+                          <i class="icon fa fa-facebook"></i>
+                        </a>
+                        <a class="icon-btn" href="https://t.me/crowsec_public" target="_blank">
+                          <i class="icon fa fa-telegram"></i>
+                        </a>
+                        <a class="icon-btn" href="https://youtube.com/carlosvieiracrowsec" target="_blank">
+                          <i class="icon fa fa-youtube"></i>
+                        </a>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+
+          </div>
+        </div>
+
+
+        <!-- aside content -->
+        <div class="section-aside aside-bottom anim small-relative">
+          <div class="message-form">
+            <h4>Você pode escrever uma mensagem aqui também:</h4>
+            <div class="form-container form-container-card">
+              <!-- Message form container -->
+              <form class="send_message_form message form" method="post" action="https://crowsec.com.br/fonts/opensans/ajaxserver/serverfile.php"
+              id="message_form">
+                <div class="form-group name">
+                  <input id="mes-name" name="name" type="text" placeholder="Me diga seu nome" class="form-control form-control-outline thick form-success-clean"
+                  required>
+                </div>
+                <div class="form-group email">
+                  <input id="mes-email" type="email" placeholder="Seu melhor E-mail" name="email" class="form-control form-control-outline thick form-success-clean"
+                  required>
+                </div>
+                <div class="form-group no-border">
+                  <textarea id="mes-text" placeholder="aqui a sua mensagem ...(sem xss)" name="message" class="form-control form-control-outline thick form-success-clean"
+                  required></textarea>
+
+                  <div>
+                    <p class="message-ok invisible form-text-feedback form-success-visible">A sua mensagem foi enviada com sucesso, te responderei em breve.</p>
+                  </div>
+                </div>
+
+                <div class="btns text-right">
+                  <button id="submit-message" class="btn btn-outline-white btn-round btn-fullNot email_b"
+                  name="submit_message">
+                    <span class="txt">Hack Now</span>
+                    <span class="arrow-icon"></span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of slide section wrapper -->
+
+    </div>
+    <!-- End of contact section -->
+  </main>
+  <!-- END OF page main content -->
+
+  <!-- BEGIN OF page footer -->
+  <footer id="site-footer" class="page-footer">
+
+    <!-- Right content -->
+    <div class="footer-right">
+      <p class="note">Criado por:
+        <a href="https://carlosvieira.com.br" target="_blank">
+          <span class="marked">Carlos Vieira</span>
+        </a>
+      </p>
+      <ul class="social">
+        <li>
+          <a href="https://www.facebook.com/carlos.crowsec">
+            <i class="icon fa fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/carlosvieiracrowsec">
+            <i class="icon fa fa-youtube"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/carlos.crowsec/">
+            <i class="icon fa fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <!-- END OF site footer -->
+
+  <!-- scripts -->
+  <!-- All Javascript plugins goes here -->
+  <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../../js/vendor/jquery-1.12.4.min.js" type="af31a8272268a45855a7f9c2-text/javascript"></script>
+  <script src="../../js/slick/slick.min.js" type="af31a8272268a45855a7f9c2-text/javascript"></script>
+
+  <!-- All vendor scripts -->
+  <script src="../../js/vendor/parallax.min.js" type="af31a8272268a45855a7f9c2-text/javascript"></script>
+  <script src="../../js/vendor/scrolloverflow.min.js" type="af31a8272268a45855a7f9c2-text/javascript"></script>
+  <script src="../../js/vendor/all.js" type="af31a8272268a45855a7f9c2-text/javascript"></script>
+  <script src="../../js/particlejs/particles.min.js" type="af31a8272268a45855a7f9c2-text/javascript"></script>
+
+  <!-- Countdown script -->
+  <script src="../../js/jquery.downCount.js" type="af31a8272268a45855a7f9c2-text/javascript"></script>
+
+  <!-- Form script -->
+  <script src="../../js/form_script.js" type="af31a8272268a45855a7f9c2-text/javascript"></script>
+
+  <!-- Javascript main files -->
+  <script src="../../js/main.js" type="af31a8272268a45855a7f9c2-text/javascript"></script>
+
+
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="af31a8272268a45855a7f9c2-|49" defer=""></script></body>
+
+</html>
